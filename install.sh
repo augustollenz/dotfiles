@@ -1,4 +1,9 @@
 #!/bin/sh
 
-ln -s ~/dotfiles/vimrc ~/.vimrc
-ln -s ~/dotfiles/vim ~/.vim
+ln -s -f ${PWD}/vimrc ~/.vimrc
+ln -s -f ${PWD}/vim ~/.vim
+
+git submodule update --init --recursive
+cd vim/bundle/YouCompleteMe/
+./install.sh --clang-completer
+cd -
