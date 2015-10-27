@@ -8,6 +8,7 @@ set shiftwidth=4
 set expandtab       " tabs are spaces
 set number          " show line numbers
 set cursorline      " highlight current line
+hi CursorLine term=bold cterm=bold guibg=Grey40
 set showmatch       " highlight matching [{()}] 
 
 set backupdir=~/.vim/bkp
